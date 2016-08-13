@@ -1,0 +1,19 @@
+<html>
+<head>
+    <!-- <script>
+        function show()
+        {
+            var x=document.getElementsByTagName("input")[0].value;
+            document.getElementsByTagName("label")[1].innerHTML=x;
+        }
+    </script> -->
+    <script src="AngularJS/angular.min.js"></script>
+    <title>AngularJS Example</title>
+</head>
+<body ng-app>
+    <label for="">Enter Name Here : </label>
+    <!--<input type="text" placeholder="Enter Name Here !" onkeyup="show()"><br>-->
+    <input type="text" placeholder="Enter Name Here !" ng-model="x"><br>
+    <label for="">{{x|uppercase}}</label>
+</body>
+</html>
